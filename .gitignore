@@ -2,3 +2,4 @@
 gwsynthesis/
 temp/
 pnr/
+*.gprj.user
