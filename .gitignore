@@ -1,0 +1,4 @@
+.*.sw*
+gwsynthesis/
+temp/
+pnr/

@@ -2,6 +2,7 @@
 
 module top(
     input   wire            clk,
+    input   wire [4:0]      sw,
     output  wire [5:0]      leds
 );
 
@@ -11,5 +12,5 @@ module top(
         cntr <= cntr + 1;
     end
 
-    assign leds     = ~cntr[25:20];
+    assign leds     = {6{(^sw)}} ^ ~cntr[25:20];
 endmodule
